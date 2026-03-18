@@ -11,7 +11,7 @@ export default function NotFound() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-background px-6 text-center">
-      <div className="w-16 h-16 mb-8 rounded-xl bg-primary" />
+      <div className="w-16 h-16 mb-8 rounded-xl bg-primary" aria-hidden="true" />
       <h1 className="text-3xl font-bold text-text-primary font-heading">
         {isEn ? 'Page not found' : 'Página não encontrada'}
       </h1>

@@ -6,7 +6,6 @@ const nextConfig = {
   output: 'export' as const,
   images: { unoptimized: true },
   trailingSlash: true,
-  eslint: { ignoreDuringBuilds: true },
 };
 
 export default withNextIntl(nextConfig);
