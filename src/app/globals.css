@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* Fonts: references CSS vars injected by next/font on <html> */
+@theme inline {
+  --font-body: var(--font-inter);
+  --font-heading: var(--font-manrope);
+}
+
+/* Static values from design tokens (assets/tokens.json) */
+@theme {
+  /* Colors */
+  --color-primary: #1F4E79;
+  --color-primary-dark: #163A5F;
+  --color-primary-light: #2A679C;
+  --color-accent: #2A9D8F;
+  --color-accent-dark: #247C73;
+  --color-accent-light: #4DB6AC;
+  --color-background: #F7F8FA;
+  --color-surface: #FFFFFF;
+  --color-border: #E2E6EB;
+  --color-text-primary: #1A1D21;
+  --color-text-secondary: #5F6B7A;
+  --color-text-muted: #9CA3AF;
+  --color-text-on-primary: #FFFFFF;
+  --color-text-on-accent: #FFFFFF;
+  --color-primary-bg: #EEF2FF;
+  --color-urgent: #D94F4F;
+  --color-urgent-bg: #FEF2F2;
+  --color-success: #2A9D8F;
+  --color-success-bg: #F0FAF8;
+  --color-warning: #E5A100;
+  --color-warning-bg: #FFFBEB;
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 16px;
+}
+
+/* Global defaults */
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-surface);
+}
+
+/* Scroll offset for fixed navbar */
+[id] {
+  scroll-margin-top: 80px;
+}

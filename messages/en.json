@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Linvo — Transform your building into a connected community",
+      "description": "Modern platform for building management. Communication, voting, bookings, and services all in one place.",
+      "keywords": "building management, condo app, property manager, building administrator, community platform",
+      "og_title": "Linvo — Connected community",
+      "og_description": "The platform that transforms your building's management."
+    },
+    "about": {
+      "title": "About Linvo — Our story and mission",
+      "description": "Meet Linvo and the team behind the platform that is transforming building management."
+    },
+    "contact": {
+      "title": "Contact — Talk to Linvo",
+      "description": "Get in touch with the Linvo team. We're ready to hear from you."
+    },
+    "privacy": {
+      "title": "Privacy & Terms — Linvo",
+      "description": "Privacy policy, terms of use, and LGPD compliance at Linvo."
+    }
+  },
+  "nav": {
+    "features": "Features",
+    "how_it_works": "How it works",
+    "faq": "FAQ",
+    "about": "About",
+    "contact": "Contact",
+    "waitlist_cta": "Join the list"
+  },
+  "hero": {
+    "headline": "Transform your building into a connected community",
+    "subtitle": "The platform that connects managers, administrators, and residents in a modern management and living experience",
+    "cta_primary": "Join the early access list",
+    "cta_secondary": "Learn more"
+  },
+  "problem": {
+    "title": "Managing a building shouldn't be this hard",
+    "items": [
+      { "title": "Lost announcements", "description": "Important information gets lost in WhatsApp groups" },
+      { "title": "Untracked voting", "description": "Paper or email voting with no traceability" },
+      { "title": "Paper bookings", "description": "Common area bookings done on paper at the front desk" },
+      { "title": "Uninformed residents", "description": "Residents who don't know what's happening in their building" }
+    ]
+  },
+  "solution": {
+    "title": "Meet Linvo",
+    "description": "Linvo is the platform that centralizes all your building's management and communication in one place. Modern, simple, and built for those who live in and manage residential communities."
+  },
+  "features": {
+    "title": "Everything your building needs",
+    "items": [
+      { "title": "Noise-free communication", "description": "Organized announcements, documents, and notices. No more information lost in WhatsApp groups." },
+      { "title": "Democratic decisions", "description": "Digital polls and votes with transparent results and full traceability." },
+      { "title": "Conflict-free spaces", "description": "Common area bookings with clear rules, visual calendar, and automatic confirmation." },
+      { "title": "Everything on record", "description": "Requests and incidents with real-time tracking. Nothing gets lost." },
+      { "title": "Trusted services", "description": "A directory of community-rated service providers. Find who you need with confidence." },
+      { "title": "Transparent finances", "description": "Bills, financial reports, and statements accessible anytime from your phone." }
+    ]
+  },
+  "how_it_works": {
+    "title": "How it works",
+    "steps": [
+      { "title": "Join the early access list", "description": "Fill out the form and secure your spot among the first." },
+      { "title": "Join the free pilot program", "description": "We invite early subscribers to test the platform at no cost." },
+      { "title": "Be one of the first to transform", "description": "Bring the Linvo experience to your building before everyone else." }
+    ],
+    "note": "When the platform is ready, onboarding will be simple: sign up, set up your building, and invite residents."
+  },
+  "social_proof": {
+    "invite_text": "Join the first building managers and administrators",
+    "founder": {
+      "name": "Founder",
+      "role": "Founder & CEO",
+      "bio": "Coming soon."
+    },
+    "badge": "Open Pilot Program"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      { "question": "What is Linvo?", "answer": "Linvo is a modern platform that centralizes all your building's management and communication. Announcements, voting, bookings, incidents, and finances all in one place." },
+      { "question": "Who is Linvo for?", "answer": "For professional building managers, resident managers, and property management companies who want to modernize management and improve the resident experience." },
+      { "question": "How much will it cost?", "answer": "We're defining affordable plans for buildings of all sizes. First participants in the pilot program will have free access." },
+      { "question": "Is my data secure?", "answer": "Yes. Linvo follows security best practices and complies with LGPD (Brazil's data protection law). Your data is encrypted and securely stored." },
+      { "question": "Does it work for small buildings?", "answer": "Yes. Linvo was designed for buildings of all sizes, from small apartments to large residential complexes." },
+      { "question": "What happens after I join the waitlist?", "answer": "You'll receive email updates on the platform's progress and be invited to join the free pilot program as spots become available." },
+      { "question": "Do I need to replace my current system?", "answer": "Not necessarily. Linvo can complement existing tools or completely replace manual processes like WhatsApp groups and spreadsheets." },
+      { "question": "How is it different from WhatsApp groups or spreadsheets?", "answer": "Linvo is a dedicated platform with organized announcements, traceable voting, automated bookings, and complete history. Everything in one place, without the noise and disorganization of messaging groups." }
+    ]
+  },
+  "waitlist": {
+    "title": "Be part of the transformation",
+    "subtitle": "Join the early access list and be one of the first to experience Linvo.",
+    "step1": {
+      "name_placeholder": "Your full name",
+      "email_placeholder": "your@email.com",
+      "profile_placeholder": "Select your profile",
+      "submit": "Secure my spot",
+      "submitting": "Sending..."
+    },
+    "step2": {
+      "thank_you": "Thank you, {name}! Want to help us prepare the best experience for you?",
+      "phone_placeholder": "+55 11 99999-9999",
+      "building_placeholder": "Your building's name",
+      "units_placeholder": "How many units?",
+      "submit": "Send additional info",
+      "skip": "Skip this step"
+    },
+    "success": "You're on the list! We'll be in touch soon.",
+    "errors": {
+      "required": "This field is required",
+      "email_invalid": "Invalid email format",
+      "name_too_short": "Name must be at least 2 characters",
+      "submit_failed": "Failed to submit. Please try again."
+    },
+    "profiles": {
+      "sindico_profissional": "Professional building manager",
+      "sindico_morador": "Resident building manager",
+      "administradora": "Property management company",
+      "outro": "Other"
+    },
+    "units": {
+      "ate_30": "Up to 30 units",
+      "31_100": "31 to 100 units",
+      "101_300": "101 to 300 units",
+      "mais_300": "More than 300 units"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Linvo. All rights reserved.",
+    "tagline": "Transforming the experience of community living."
+  },
+  "cookie_consent": {
+    "message": "We use cookies to improve your experience. By continuing, you agree to our",
+    "policy_link": "Privacy Policy",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "not_found": {
+    "title": "Page not found",
+    "message": "The page you're looking for doesn't exist or has been moved.",
+    "cta": "Back to home"
+  }
+}
