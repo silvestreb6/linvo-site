@@ -1,23 +1,23 @@
 {
   "metadata": {
     "home": {
-      "title": "Linvo — Transforme seu condominio em uma comunidade conectada",
-      "description": "Plataforma moderna para gestao de condominios. Comunicacao, votacoes, reservas e servicos em um so lugar.",
-      "keywords": "gestao de condominio, app para condominio, sindico, administradora, comunicacao condominial",
+      "title": "Linvo — Transforme seu condomínio em uma comunidade conectada",
+      "description": "Plataforma moderna para gestão de condomínios. Comunicação, votações, reservas e serviços em um só lugar.",
+      "keywords": "gestão de condomínio, app para condomínio, síndico, administradora, comunicação condominial",
       "og_title": "Linvo — Comunidade conectada",
-      "og_description": "A plataforma que transforma a gestao do seu condominio."
+      "og_description": "A plataforma que transforma a gestão do seu condomínio."
     },
     "about": {
-      "title": "Sobre a Linvo — Nossa historia e missao",
-      "description": "Conheca a Linvo e a equipe por tras da plataforma que esta transformando a gestao condominial."
+      "title": "Sobre a Linvo — Nossa história e missão",
+      "description": "Conheça a Linvo e a equipe por trás da plataforma que está transformando a gestão condominial."
     },
     "contact": {
       "title": "Contato — Fale com a Linvo",
-      "description": "Entre em contato com a equipe da Linvo. Estamos prontos para ouvir voce."
+      "description": "Entre em contato com a equipe da Linvo. Estamos prontos para ouvir você."
     },
     "privacy": {
       "title": "Privacidade & Termos — Linvo",
-      "description": "Politica de privacidade, termos de uso e conformidade LGPD da Linvo."
+      "description": "Política de privacidade, termos de uso e conformidade LGPD da Linvo."
     }
   },
   "nav": {
@@ -29,46 +29,46 @@
     "waitlist_cta": "Entrar na lista"
   },
   "hero": {
-    "headline": "Transforme seu condominio em uma comunidade conectada",
-    "subtitle": "A plataforma que conecta sindicos, administradoras e moradores em uma experiencia moderna de gestao e convivencia",
+    "headline": "Transforme seu condomínio em uma comunidade conectada",
+    "subtitle": "A plataforma que conecta síndicos, administradoras e moradores em uma experiência moderna de gestão e convivência",
     "cta_primary": "Entrar na lista de acesso antecipado",
     "cta_secondary": "Saiba mais"
   },
   "problem": {
-    "title": "Gerenciar um condominio nao deveria ser tao dificil",
+    "title": "Gerenciar um condomínio não deveria ser tão difícil",
     "items": [
-      { "title": "Comunicados perdidos", "description": "Informacoes importantes se perdem em grupos de WhatsApp" },
-      { "title": "Votacoes sem controle", "description": "Votacoes por papel ou e-mail sem rastreabilidade" },
-      { "title": "Reservas no caderninho", "description": "Reservas de espacos comuns feitas em caderno na portaria" },
-      { "title": "Moradores desinformados", "description": "Moradores que nao sabem o que acontece no condominio" }
+      { "title": "Comunicados perdidos", "description": "Informações importantes se perdem em grupos de WhatsApp" },
+      { "title": "Votações sem controle", "description": "Votações por papel ou e-mail sem rastreabilidade" },
+      { "title": "Reservas no caderninho", "description": "Reservas de espaços comuns feitas em caderno na portaria" },
+      { "title": "Moradores desinformados", "description": "Moradores que não sabem o que acontece no condomínio" }
     ]
   },
   "solution": {
-    "title": "Conheca a Linvo",
-    "description": "A Linvo e a plataforma que centraliza toda a gestao e comunicacao do seu condominio em um so lugar. Moderna, simples e feita para quem vive e administra comunidades residenciais."
+    "title": "Conheça a Linvo",
+    "description": "A Linvo é a plataforma que centraliza toda a gestão e comunicação do seu condomínio em um só lugar. Moderna, simples e feita para quem vive e administra comunidades residenciais."
   },
   "features": {
-    "title": "Tudo que seu condominio precisa",
+    "title": "Tudo que seu condomínio precisa",
     "items": [
-      { "title": "Comunicacao sem ruido", "description": "Comunicados, documentos e avisos organizados. Chega de informacao perdida em grupos de WhatsApp." },
-      { "title": "Decisoes democraticas", "description": "Enquetes e votacoes digitais com resultados transparentes e rastreabilidade completa." },
-      { "title": "Espacos sem conflito", "description": "Reservas de areas comuns com regras claras, calendario visual e confirmacao automatica." },
-      { "title": "Tudo registrado", "description": "Solicitacoes e ocorrencias com acompanhamento em tempo real. Nada se perde." },
-      { "title": "Servicos de confianca", "description": "Diretorio de prestadores avaliados pela comunidade. Encontre quem precisa com seguranca." },
-      { "title": "Financeiro transparente", "description": "Boletos, prestacao de contas e extrato acessiveis a qualquer momento pelo celular." }
+      { "title": "Comunicação sem ruído", "description": "Comunicados, documentos e avisos organizados. Chega de informação perdida em grupos de WhatsApp." },
+      { "title": "Decisões democráticas", "description": "Enquetes e votações digitais com resultados transparentes e rastreabilidade completa." },
+      { "title": "Espaços sem conflito", "description": "Reservas de áreas comuns com regras claras, calendário visual e confirmação automática." },
+      { "title": "Tudo registrado", "description": "Solicitações e ocorrências com acompanhamento em tempo real. Nada se perde." },
+      { "title": "Serviços de confiança", "description": "Diretório de prestadores avaliados pela comunidade. Encontre quem precisa com segurança." },
+      { "title": "Financeiro transparente", "description": "Boletos, prestação de contas e extrato acessíveis a qualquer momento pelo celular." }
     ]
   },
   "how_it_works": {
     "title": "Como funciona",
     "steps": [
-      { "title": "Entre na lista de acesso antecipado", "description": "Preencha o formulario e garanta sua vaga entre os primeiros." },
+      { "title": "Entre na lista de acesso antecipado", "description": "Preencha o formulário e garanta sua vaga entre os primeiros." },
       { "title": "Participe do programa piloto gratuito", "description": "Convidamos os primeiros inscritos para testar a plataforma sem custo." },
-      { "title": "Seja um dos primeiros a transformar", "description": "Leve a experiencia Linvo para o seu condominio antes de todo mundo." }
+      { "title": "Seja um dos primeiros a transformar", "description": "Leve a experiência Linvo para o seu condomínio antes de todo mundo." }
     ],
-    "note": "Quando a plataforma estiver pronta, o onboarding sera simples: cadastre-se, configure seu condominio e convide os moradores."
+    "note": "Quando a plataforma estiver pronta, o onboarding será simples: cadastre-se, configure seu condomínio e convide os moradores."
   },
   "social_proof": {
-    "invite_text": "Junte-se aos primeiros sindicos e administradoras",
+    "invite_text": "Junte-se aos primeiros síndicos e administradoras",
     "founder": {
       "name": "Fundador",
       "role": "Fundador & CEO",
@@ -79,18 +79,18 @@
   "faq": {
     "title": "Perguntas frequentes",
     "items": [
-      { "question": "O que e a Linvo?", "answer": "A Linvo e uma plataforma moderna que centraliza toda a gestao e comunicacao do seu condominio. Comunicados, votacoes, reservas, ocorrencias e financeiro em um so lugar." },
-      { "question": "Para quem a Linvo e feita?", "answer": "Para sindicos profissionais, sindicos moradores e administradoras de condominios que querem modernizar a gestao e melhorar a experiencia dos moradores." },
-      { "question": "Quanto vai custar?", "answer": "Estamos definindo planos acessiveis para condominios de todos os tamanhos. Os primeiros participantes do programa piloto terao acesso gratuito." },
-      { "question": "Meus dados estao seguros?", "answer": "Sim. A Linvo segue as melhores praticas de seguranca e esta em conformidade com a LGPD. Seus dados sao criptografados e armazenados com seguranca." },
-      { "question": "Funciona para condominios pequenos?", "answer": "Sim. A Linvo foi projetada para condominios de todos os tamanhos, desde pequenos predios ate grandes complexos residenciais." },
-      { "question": "O que acontece depois que eu entrar na waitlist?", "answer": "Voce recebera atualizacoes por e-mail sobre o progresso da plataforma e sera convidado para participar do programa piloto gratuito assim que houver vagas." },
-      { "question": "Preciso trocar meu sistema atual?", "answer": "Nao necessariamente. A Linvo pode complementar ferramentas existentes ou substituir completamente processos manuais como grupos de WhatsApp e planilhas." },
-      { "question": "Qual a diferenca para grupos de WhatsApp ou planilhas?", "answer": "A Linvo e uma plataforma dedicada com comunicados organizados, votacoes rastreaveis, reservas automatizadas e historico completo. Tudo em um so lugar, sem o ruido e a desorganizacao de grupos de mensagens." }
+      { "question": "O que é a Linvo?", "answer": "A Linvo é uma plataforma moderna que centraliza toda a gestão e comunicação do seu condomínio. Comunicados, votações, reservas, ocorrências e financeiro em um só lugar." },
+      { "question": "Para quem a Linvo é feita?", "answer": "Para síndicos profissionais, síndicos moradores e administradoras de condomínios que querem modernizar a gestão e melhorar a experiência dos moradores." },
+      { "question": "Quanto vai custar?", "answer": "Estamos definindo planos acessíveis para condomínios de todos os tamanhos. Os primeiros participantes do programa piloto terão acesso gratuito." },
+      { "question": "Meus dados estão seguros?", "answer": "Sim. A Linvo segue as melhores práticas de segurança e está em conformidade com a LGPD. Seus dados são criptografados e armazenados com segurança." },
+      { "question": "Funciona para condomínios pequenos?", "answer": "Sim. A Linvo foi projetada para condomínios de todos os tamanhos, desde pequenos prédios até grandes complexos residenciais." },
+      { "question": "O que acontece depois que eu entrar na waitlist?", "answer": "Você receberá atualizações por e-mail sobre o progresso da plataforma e será convidado para participar do programa piloto gratuito assim que houver vagas." },
+      { "question": "Preciso trocar meu sistema atual?", "answer": "Não necessariamente. A Linvo pode complementar ferramentas existentes ou substituir completamente processos manuais como grupos de WhatsApp e planilhas." },
+      { "question": "Qual a diferença para grupos de WhatsApp ou planilhas?", "answer": "A Linvo é uma plataforma dedicada com comunicados organizados, votações rastreáveis, reservas automatizadas e histórico completo. Tudo em um só lugar, sem o ruído e a desorganização de grupos de mensagens." }
     ]
   },
   "waitlist": {
-    "title": "Faca parte da transformacao",
+    "title": "Faça parte da transformação",
     "subtitle": "Entre na lista de acesso antecipado e seja um dos primeiros a conhecer a Linvo.",
     "step1": {
       "name_placeholder": "Seu nome completo",
@@ -100,28 +100,28 @@
       "submitting": "Enviando..."
     },
     "step2": {
-      "thank_you": "Obrigado, {name}! Quer nos ajudar a preparar a melhor experiencia para voce?",
+      "thank_you": "Obrigado, {name}! Quer nos ajudar a preparar a melhor experiência para você?",
       "phone_placeholder": "(11) 99999-9999",
-      "building_placeholder": "Nome do seu condominio",
+      "building_placeholder": "Nome do seu condomínio",
       "units_placeholder": "Quantas unidades?",
-      "submit": "Enviar informacoes adicionais",
+      "submit": "Enviar informações adicionais",
       "skip": "Pular esta etapa"
     },
-    "success": "Voce esta na lista! Entraremos em contato em breve.",
+    "success": "Você está na lista! Entraremos em contato em breve.",
     "errors": {
-      "required": "Este campo e obrigatorio",
-      "email_invalid": "Formato de e-mail invalido",
+      "required": "Este campo é obrigatório",
+      "email_invalid": "Formato de e-mail inválido",
       "name_too_short": "Nome deve ter pelo menos 2 caracteres",
       "submit_failed": "Erro ao enviar. Tente novamente."
     },
     "profiles": {
-      "sindico_profissional": "Sindico(a) profissional",
-      "sindico_morador": "Sindico(a) morador(a)",
-      "administradora": "Administradora de condominios",
+      "sindico_profissional": "Síndico(a) profissional",
+      "sindico_morador": "Síndico(a) morador(a)",
+      "administradora": "Administradora de condomínios",
       "outro": "Outro"
     },
     "units": {
-      "ate_30": "Ate 30 unidades",
+      "ate_30": "Até 30 unidades",
       "31_100": "31 a 100 unidades",
       "101_300": "101 a 300 unidades",
       "mais_300": "Mais de 300 unidades"
@@ -129,17 +129,17 @@
   },
   "footer": {
     "copyright": "© 2026 Linvo. Todos os direitos reservados.",
-    "tagline": "Transformando a experiencia de viver em comunidade."
+    "tagline": "Transformando a experiência de viver em comunidade."
   },
   "cookie_consent": {
-    "message": "Usamos cookies para melhorar sua experiencia. Ao continuar, voce concorda com nossa",
-    "policy_link": "Politica de Privacidade",
+    "message": "Usamos cookies para melhorar sua experiência. Ao continuar, você concorda com nossa",
+    "policy_link": "Política de Privacidade",
     "accept": "Aceitar",
     "decline": "Rejeitar"
   },
   "not_found": {
-    "title": "Pagina nao encontrada",
-    "message": "A pagina que voce procura nao existe ou foi movida.",
-    "cta": "Voltar para o inicio"
+    "title": "Página não encontrada",
+    "message": "A página que você procura não existe ou foi movida.",
+    "cta": "Voltar para o início"
   }
 }
