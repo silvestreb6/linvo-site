@@ -19,4 +19,52 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://linvo.one/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://linvo.one/pt/"/>
   </url>
+  <url>
+    <loc>https://linvo.one/pt/sobre/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://linvo.one/pt/sobre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://linvo.one/en/about/"/>
+  </url>
+  <url>
+    <loc>https://linvo.one/en/about/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://linvo.one/pt/sobre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://linvo.one/en/about/"/>
+  </url>
+  <url>
+    <loc>https://linvo.one/pt/contato/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://linvo.one/pt/contato/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://linvo.one/en/contact/"/>
+  </url>
+  <url>
+    <loc>https://linvo.one/en/contact/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://linvo.one/pt/contato/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://linvo.one/en/contact/"/>
+  </url>
+  <url>
+    <loc>https://linvo.one/pt/privacidade/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://linvo.one/pt/privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://linvo.one/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://linvo.one/en/privacy/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://linvo.one/pt/privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://linvo.one/en/privacy/"/>
+  </url>
 </urlset>

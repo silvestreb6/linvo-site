@@ -1,7 +1,14 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
 import type { Metadata } from 'next';
 import { getAlternates } from '@/i18n/navigation';
+import { Hero } from '@/components/sections/Hero';
+import { Problem } from '@/components/sections/Problem';
+import { Solution } from '@/components/sections/Solution';
+import { Features } from '@/components/sections/Features';
+import { HowItWorks } from '@/components/sections/HowItWorks';
+import { SocialProof } from '@/components/sections/SocialProof';
+import { FAQ } from '@/components/sections/FAQ';
+import { WaitlistCTA } from '@/components/sections/WaitlistCTA';
 
 export async function generateMetadata({
   params,
@@ -10,8 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
-  const currentPath = `/${locale}/`;
-  const alternates = getAlternates(currentPath);
+  const alternates = getAlternates(`/${locale}/`);
 
   return {
     title: t('home.title'),
@@ -42,30 +48,16 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <LandingStub />;
-}
-
-function LandingStub() {
-  const t = useTranslations('hero');
-
   return (
-    <div className="flex items-center justify-center min-h-screen bg-background">
-      <div className="max-w-2xl px-6 text-center">
-        <h1 className="text-4xl font-heading font-bold text-text-primary md:text-5xl">
-          {t('headline')}
-        </h1>
-        <p className="mt-6 text-lg font-body text-text-secondary">
-          {t('subtitle')}
-        </p>
-        <div className="mt-8">
-          <a
-            href="#waitlist"
-            className="inline-block rounded-lg bg-accent-dark px-6 py-3 text-text-on-accent font-semibold hover:opacity-90 transition-opacity cursor-pointer"
-          >
-            {t('cta_primary')}
-          </a>
-        </div>
-      </div>
-    </div>
+    <>
+      <Hero />
+      <Problem />
+      <Solution />
+      <Features />
+      <HowItWorks />
+      <SocialProof />
+      <FAQ />
+      <WaitlistCTA />
+    </>
   );
 }
