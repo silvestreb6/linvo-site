@@ -39,6 +39,10 @@
 }
 
 /* Global defaults */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--color-text-primary);

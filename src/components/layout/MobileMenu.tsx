@@ -25,7 +25,7 @@ export function MobileMenu({
   return (
     <div className="fixed inset-0 z-50 md:hidden">
       <div className="absolute inset-0 bg-black/50" onClick={onClose} />
-      <div className="absolute right-0 top-0 h-full w-72 bg-surface shadow-xl animate-in slide-in-from-right">
+      <div className="absolute right-0 top-0 h-full w-72 bg-surface shadow-xl transition-transform duration-300">
         <div className="flex justify-end p-4">
           <button onClick={onClose} className="p-2 text-text-primary cursor-pointer" aria-label="Close">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
