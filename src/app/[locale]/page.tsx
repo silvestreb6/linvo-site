@@ -58,9 +58,12 @@ function LandingStub() {
           {t('subtitle')}
         </p>
         <div className="mt-8">
-          <span className="inline-block rounded-lg bg-accent-dark px-6 py-3 text-text-on-accent font-semibold">
+          <a
+            href="#waitlist"
+            className="inline-block rounded-lg bg-accent-dark px-6 py-3 text-text-on-accent font-semibold hover:opacity-90 transition-opacity cursor-pointer"
+          >
             {t('cta_primary')}
-          </span>
+          </a>
         </div>
       </div>
     </div>
