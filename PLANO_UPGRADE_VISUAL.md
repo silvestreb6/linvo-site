@@ -1,268 +1,229 @@
-# Plano de Upgrade Visual — linvo.one
+# Plano de Upgrade Visual — linvo.one (v2)
 
 > Data: 2026-03-18
-> Objetivo: Elevar a qualidade visual de "MVP funcional" para "plataforma confiavel e moderna para gestao condominial"
+> Reescrito do zero com base em analise detalhada de concorrentes.
 
 ---
 
-## 0. Analise de Concorrentes — Insights
+## 1. Analise Competitiva Detalhada
 
-### TownSq
-- **Tom**: Profissional mas acessivel. Nao tech demais.
-- **Pontos fortes**: Gradientes diagonais como identidade visual, mockup do app no hero, numeros animados (20 mil condominios, 4 paises), logos de midia (Veja, Yahoo, AWS).
-- **Insight para Linvo**: Hero com mockup do app + numeros de prova social criam credibilidade imediata sem parecer excessivamente tecnico.
+### TownSq — "O maior aplicativo para condominio do mundo"
+- **Hero**: Split 50/50 (texto esquerda + mockup app direita). Gradiente diagonal verde→branco. Headline em uppercase bold 2.8em. Dois CTAs (verde primario + cinza escuro secundario).
+- **Prova social**: Numeros animados (20 mil condominios, 4 paises), carousel de depoimentos com fotos, grid de logos de midia (Veja, Yahoo, AWS).
+- **Features**: Grid de 3 colunas com icones de 80px centrados + descricoes. Secoes alternadas com gradientes e imagens lado a lado.
+- **Espacamento**: Muito generoso (50-100px entre secoes). Visual "airy/luxury".
+- **Ponto forte**: Gradientes diagonais como assinatura visual. Profundidade com sombras longas.
+- **Fraqueza**: Headline uppercase pode parecer agressivo. Verde neon pode cansar.
 
-### Superlogica
-- **Tom**: Corporativo B2B, mais serio e orientado a negocios.
-- **Pontos fortes**: Sistema de design robusto, animacoes sutis, CTAs com efeito ripple, secao "Por que escolher" com imagem lado a lado.
-- **Insight para Linvo**: Evitar esse tom excessivamente corporativo. Superlogica e para gestoras grandes; Linvo deve parecer mais proximo e amigavel.
+### Superlogica — Plataforma financeira para condominios
+- **Tom**: Corporativo B2B serio. Azul (#1034F2) + amarelo destaque.
+- **CTAs**: 3 estilos (azul solido, amarelo, transparente com borda). Efeito ripple ao clique.
+- **Layout**: Grid responsivo em 5+ breakpoints. Secao "Por que escolher" com imagem lado a lado.
+- **Ponto forte**: Sistema de design robusto, animacoes sofisticadas.
+- **Fraqueza**: Muito corporativo e distante. Fala para gestoras grandes, nao para sindicos individuais.
 
-### uCondo
-- **Tom**: Pratico, direto, acessivel. O mais proximo do que a Linvo deveria ser.
-- **Pontos fortes**: Headline "O sistema que trabalha por voce" (foco no beneficio, nao na tecnologia), depoimentos com foto+nome+empresa, CTAs por persona (sindico, administradora, morador), 700 mil clientes como prova social imediata.
-- **Insight para Linvo**: Linguagem de beneficio (nao de feature), depoimentos humanizados, segmentacao por persona no CTA.
-
-### Sintese — Tom Visual para Linvo
-
-| Nao queremos          | Queremos                                      |
-|-----------------------|-----------------------------------------------|
-| Tech startup frio     | Plataforma acolhedora para comunidades        |
-| Dashboard complexo    | Experiencia simples e visual                  |
-| Jargao tecnico        | Linguagem de beneficio ("funciona por voce")  |
-| Abstracoes geometricas| Pessoas, predios, comunidade                  |
-| Cores neon/tech       | Azul confianca + teal caloroso (ja temos)     |
-
-**Direcao**: Visual entre uCondo (pratico/acessivel) e TownSq (moderno/confiavel), sem o peso corporativo da Superlogica.
+### uCondo — "O sistema que trabalha por voce"
+- **Hero**: Split com foto real de pessoa usando a plataforma + "700 mil clientes" como subtexto. Dois CTAs: "Conheca o sistema" + "Demonstracao".
+- **Segmentacao por persona**: 3 cards dedicados — Sindico, Administradora, Morador — cada um com beneficios especificos e CTAs contextualizados.
+- **Prova social**: 3 depoimentos com foto real + nome + empresa + cidade. Metrica de 700 mil usuarios.
+- **Features**: 7 secoes horizontais com headline + paragrafo + bullets + "Explore a solucao →".
+- **Conversao**: WhatsApp flutuante, botoes App Store/Google Play, formulario no footer, 10+ CTAs na pagina.
+- **Ponto forte**: Tom pratico, linguagem de beneficio, multiplos pontos de conversao.
+- **Fraqueza**: Sem screenshots do produto. Design funcional mas nao memoravel.
 
 ---
 
-## 1. Diagnostico do Estado Atual
+## 2. Posicionamento Visual da Linvo
 
-### O que esta bom
-- Estrutura HTML semantica e acessivel
-- Paleta de cores consistente (design tokens)
-- Tipografia definida (Manrope + Inter)
-- Layout responsivo funcional (mobile/desktop)
-- i18n bilingue funcionando
+### O que aprender de cada um
 
-### O que esta fraco
-- **Navbar**: Texto "Linvo" sem logo real, sem efeitos de scroll refinados
-- **Hero**: Bloco de texto solto sem visual de apoio (mockup, ilustracao, formas decorativas)
-- **Secoes**: Todas sao texto + texto, sem elementos visuais que quebrem a monotonia
-- **Cards de Features**: Borda simples, sem profundidade ou diferenciacao visual
-- **Icones SVG**: Inline e genericos, sem personalidade
-- **Problema**: Lista seca sem impacto visual
-- **Social Proof**: Placeholder circular sem foto real, layout sem peso visual
-- **FAQ**: Accordion funcional mas visualmente plano
-- **Waitlist CTA**: Formulario sobre fundo gradiente, sem decoracao
-- **Footer**: Minimalista demais, sem presenca de marca
-- **Ausencia total**: Formas decorativas, texturas, espacamento generoso, micro-interacoes
+| Concorrente   | Copiar                                          | Evitar                              |
+|---------------|------------------------------------------------|-------------------------------------|
+| **TownSq**    | Mockup do app no hero, espacamento generoso, numeros de prova social | Uppercase agressivo, verde neon     |
+| **Superlogica**| Profissionalismo no design system, animacoes sutis | Tom corporativo frio, complexidade  |
+| **uCondo**    | Linguagem de beneficio, persona cards, foto real nos depoimentos, WhatsApp | Ausencia de screenshots, design generico |
 
----
+### Tom Visual da Linvo
 
-## 2. Principios do Upgrade
+```
+Confiavel + Acolhedor + Moderno (sem ser tech)
 
-1. **Confiavel e acolhedor** — transmitir seguranca sem ser frio. Sindicos precisam confiar, nao se impressionar com tech.
-2. **Linguagem de beneficio** — "funciona por voce" em vez de "plataforma modular". Foco em resultado, nao em feature.
-3. **Espacamento generoso** — breathing room entre secoes. Site precisa "respirar".
-4. **Depth sutil** — sombras suaves nos cards, hierarquia visual clara sem exagero.
-5. **Logo real** — usar logo-linvo.png na navbar e footer. Presenca de marca forte.
-6. **Mockup do app** — mostrar visualmente o que o produto faz (como TownSq e uCondo fazem).
-7. **Prova social cedo** — numeros, badges, depoimentos o mais rapido possivel na pagina.
-8. **Cores quentes sobre base fria** — azul (#1F4E79) como confianca + teal (#2A9D8F) como calor humano. Equilibrio que os concorrentes nao tem.
+Escala de posicionamento:
+Superlogica ←— [corporativo frio] ——— Linvo ——— [pratico/humano] —→ uCondo
+                                         ↑
+                                    TownSq [moderno]
+```
+
+**Linvo ocupa o centro**: mais moderna que uCondo, mais humana que Superlogica, com a sofisticacao visual do TownSq mas sem o peso.
+
+### Principios visuais
+
+1. **Confianca sem frieza** — azul inspira seguranca; teal adiciona calor humano
+2. **Beneficio acima de feature** — cada secao comunica o que resolve, nao o que faz
+3. **Mockup do produto** — mostrar o app (mesmo que simulado) como TownSq faz
+4. **Pessoas reais quando possivel** — foto do fundador, futuros depoimentos com foto
+5. **Espacamento generoso** — 60-100px entre secoes, cards com padding amplo
+6. **Multiplos pontos de conversao** — CTA no hero, no meio, no final (como uCondo)
+7. **Segmentacao por persona** — falar separadamente com sindico e administradora
 
 ---
 
-## 3. Mudancas por Componente
+## 3. Mudancas Detalhadas por Componente
 
 ### 3.1 Navbar
 
-| Antes | Depois |
-|-------|--------|
-| Texto "Linvo" em font-bold | Logo real `logo-linvo.png` (WebP, ~32px altura) |
-| Background solido branco | Background transparente no topo, branco com blur ao scroll |
-| Sem borda inferior | Borda sutil `border-b border-border/50` ao scroll |
-| CTA simples | CTA com pill shape mais arredondado + shadow sutil |
+**Estado atual**: Texto "Linvo" em bold, fundo branco solido, CTA retangular.
 
-**Detalhes**:
-- Logo: converter `logo-linvo.png` para WebP, servir de `/images/logo-linvo.webp`
-- Altura navbar: manter 64px
-- Transicao scroll: `bg-transparent` → `bg-surface/90 backdrop-blur-md border-b border-border/30`
-- CTA navbar: `rounded-full px-5 py-2 shadow-sm`
+**Upgrade**:
+- Substituir texto por logo real (`logo-linvo.webp`, altura ~32px)
+- Scroll: `bg-surface` → ao scrollar, adicionar `shadow-sm backdrop-blur-sm bg-surface/95`
+- CTA do navbar: `rounded-full` (pill shape) como uCondo e TownSq
+- Mobile: manter hamburger, melhorar drawer com logo no topo
 
 ### 3.2 Hero
 
-| Antes | Depois |
-|-------|--------|
-| Texto alinhado a esquerda sem visual | Split layout: texto esquerda + visual direita |
-| Gradiente simples | Gradiente + formas decorativas (circulos, grid dots) |
-| Sem badge/tag | Badge "Pre-lancamento" acima do headline |
-| Dois CTAs em linha | CTAs com icones (seta, foguete) |
+**Estado atual**: Texto alinhado esquerda sem visual, gradiente simples, padding moderado.
 
-**Detalhes**:
-- Layout: `grid md:grid-cols-2 gap-12 items-center`
-- Visual direita: mockup estilizado do app simulando tela de celular com cards representando comunicados, votacoes, reservas — mostra visualmente o que o app faz sem ser abstrato
-- Formas decorativas: circulo grande semitransparente sutil (`bg-white/5 rounded-full`) — apenas 1-2 formas, nao poluir
-- Badge: `<span>` com icone Rocket + texto "Programa Piloto Aberto" / "Open Pilot Program" em `bg-white/10 text-white/90 rounded-full px-4 py-1.5 text-sm`
-- CTA primario: adicionar icone seta → `→` dentro do botao
-- Padding vertical: aumentar para `py-24 md:py-40`
+**Upgrade** (inspirado em TownSq + uCondo):
+- **Layout**: `grid md:grid-cols-2 gap-12 items-center` — texto esquerda, visual direita
+- **Visual direita**: componente `PhoneMockup` simulando tela do app com cards de comunicados, votacoes, reservas (mostra o que o produto faz sem ser abstrato)
+- **Badge acima do headline**: "Programa Piloto Aberto" em `bg-white/15 rounded-full px-4 py-1.5 text-sm text-white/90` — cria senso de exclusividade (como uCondo com "700 mil clientes")
+- **CTA primario**: adicionar seta `→` apos o texto, `rounded-full` em vez de `rounded-lg`
+- **Padding**: aumentar para `py-24 md:py-36` — mais espaco como TownSq
+- **Decoracao**: 1-2 circulos semitransparentes (`bg-white/5`) nos cantos para quebrar o flat
 
-### 3.3 Secao "O Problema"
+### 3.3 Secao Problema
 
-| Antes | Depois |
-|-------|--------|
-| Grid 2x2 com icone + texto | Cards individuais com background, borda e numero |
-| Icones vermelhos simples | Icones em circulo com background `urgent-bg` |
-| Sem numeracao | Numero grande decorativo em cada card |
+**Estado atual**: Grid 2x2 com icones SVG vermelhos + texto.
 
-**Detalhes**:
-- Cada dor em card: `bg-surface rounded-xl p-6 border border-border shadow-sm`
-- Icone dentro de circulo: `w-12 h-12 rounded-full bg-urgent-bg flex items-center justify-center`
-- Titulo em `text-lg font-bold`
-- Background da secao: manter `#F7F8FA` mas adicionar sutil pattern SVG (grid dots)
+**Upgrade**:
+- Cada dor dentro de card: `bg-surface rounded-xl p-6 border border-border/50 shadow-sm`
+- Icone em circulo: `w-12 h-12 rounded-full bg-urgent-bg flex items-center justify-center`
+- Titulo: `text-lg font-bold` (hierarquia mais clara)
+- Grid: manter `sm:grid-cols-2` mas com `gap-6` em vez de `gap-8`
 
-### 3.4 Secao "A Solucao"
+### 3.4 Secao Solucao
 
-| Antes | Depois |
-|-------|--------|
-| Texto centralizado simples | Split: texto esquerda + imagem/ilustracao direita |
-| Sem destaque visual | Headline com accent underline decorativo |
-| Sem CTA | Adicionar CTA secundario para waitlist |
+**Estado atual**: Texto centralizado simples, sem visual.
 
-**Detalhes**:
-- Layout: `grid md:grid-cols-2 gap-12 items-center`
-- Lado direito: logo-app-icon.png em contexto (simular tela de celular)
-- Accent underline: `<span>` com `border-b-4 border-accent pb-1` na palavra-chave
-- CTA: link sutil "Entrar na lista →" em cor accent
+**Upgrade**:
+- **Layout split**: `grid md:grid-cols-2 gap-12 items-center` (como secoes de feature da TownSq)
+- **Lado esquerdo**: titulo + descricao + CTA sutil "Entrar na lista →"
+- **Lado direito**: logo do app (`logo-app-icon.webp`) em tamanho grande com shadow decorativo
+- **Underline decorativo**: `<span className="border-b-4 border-accent/50">` na palavra-chave do titulo
 
-### 3.5 Cards de Features
+### 3.5 Features
 
-| Antes | Depois |
-|-------|--------|
-| Borda fina + hover shadow | Gradiente sutil no topo + icone com background |
-| Icone SVG solto | Icone dentro de quadrado arredondado com cor de fundo |
-| Sem hierarquia | Barra colorida no topo do card (4px accent) |
+**Estado atual**: Grid 3x2 com borda fina, icone SVG solto, hover shadow basico.
 
-**Detalhes**:
-- Card: `bg-surface rounded-2xl p-8 border border-border/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300`
-- Icone wrapper: `w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-5`
-- Barra topo: `<div className="h-1 w-12 bg-accent rounded-full mb-6" />`
-- Titulo: `text-xl` em vez de `text-lg`
+**Upgrade** (inspirado no grid de icones da TownSq):
+- Card: `bg-surface rounded-2xl p-8 border border-border/30 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300`
+- **Icone em wrapper**: `w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-5` — fundo leve atras do icone
+- **Barra decorativa**: `<div className="h-1 w-12 bg-accent rounded-full mb-6" />` no topo de cada card
+- Titulo: aumentar para `text-xl`
+- Descricao: `text-sm leading-relaxed text-text-secondary`
 
-### 3.6 Secao "Como Funciona"
+### 3.6 Como Funciona
 
-| Antes | Depois |
-|-------|--------|
-| Numeros em circulo simples | Numeros em circulo grande com sombra + linha conectora |
-| Grid sem conexao visual | Linha horizontal pontilhada conectando os passos |
-| Nota em italico simples | Nota em card sutil com icone de info |
+**Estado atual**: 3 numeros em circulo, grid simples, nota em italico.
 
-**Detalhes**:
-- Numeros: `w-16 h-16 rounded-full bg-primary text-white text-2xl font-bold shadow-lg`
-- Linha conectora (desktop): `<div className="hidden md:block absolute top-8 left-[calc(50%-1px)] w-full h-0.5 border-t-2 border-dashed border-primary/20" />`  entre passos
-- Cada passo: position relative para a linha conectar
-- Nota: dentro de `bg-primary-bg rounded-xl p-4 mt-8 flex items-start gap-3` com icone Info
+**Upgrade**:
+- Numeros maiores: `w-16 h-16 text-2xl` com `shadow-lg`
+- **Linha conectora**: linha pontilhada horizontal entre os 3 passos (desktop only) — como um "journey path"
+- Nota: dentro de `bg-primary-bg rounded-xl p-5 flex items-start gap-3` com icone de info SVG
+- Background da secao: manter branco
 
-### 3.7 Prova Social / Credibilidade
+### 3.7 Prova Social
 
-| Antes | Depois |
-|-------|--------|
-| Grid 3 colunas com placeholder | Layout vertical centrado com mais impacto |
-| Circulo com letra inicial | Placeholder mais elaborado (silhueta ou moldura) |
-| Badge pequeno | Badge maior, mais proeminente com glow sutil |
+**Estado atual**: Grid 3 colunas (texto convite + placeholder fundador + badge).
 
-**Detalhes**:
-- Layout: stack vertical centrado `max-w-2xl mx-auto text-center`
-- Invite text: `text-2xl md:text-3xl font-bold` com gradiente de texto (`bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent`)
-- Fundador: card com `bg-surface rounded-2xl p-8 shadow-md mt-8` contendo foto + bio
-- Badge: `mt-8` com `bg-accent/10 border border-accent/30 rounded-full px-6 py-3 text-accent font-semibold`
+**Upgrade**:
+- **Layout vertical centrado** (stack em vez de grid) — mais impacto
+- Texto convite: `text-2xl md:text-3xl font-bold` com gradiente de texto (`text-gradient`) — chama atencao
+- Fundador: dentro de card `bg-surface rounded-2xl p-8 shadow-md border border-border/30` — destaca visualmente
+- Badge: `bg-accent/10 border border-accent/30 rounded-full px-6 py-3 text-accent font-semibold` — mais proeminente
+- **Futuro**: quando houver depoimentos reais, adicionar carousel como TownSq (foto + nome + empresa)
 
 ### 3.8 FAQ
 
-| Antes | Depois |
-|-------|--------|
-| Divide-y simples | Cards individuais com spacing |
-| Sem icone de destaque | Icone accent no lado esquerdo de cada pergunta |
-| Fundo branco liso | Fundo com sutil gradiente ou pattern |
+**Estado atual**: Accordion com divide-y (linhas separadoras).
 
-**Detalhes**:
-- Cada item: `bg-surface rounded-xl border border-border/50 mb-3 px-6` em vez de divide-y
-- Pergunta: adicionar bullet decorativo `w-2 h-2 rounded-full bg-accent shrink-0 mt-2` antes do texto
-- Secao background: manter surface mas adicionar detalhe visual no titulo (icone MessageCircleQuestion)
+**Upgrade**:
+- Cada pergunta em card individual: `bg-surface rounded-xl border border-border/30 mb-3 overflow-hidden`
+- Bullet decorativo: `w-2 h-2 rounded-full bg-accent shrink-0 mt-2.5` antes da pergunta
+- Manter comportamento single-open
+- Padding interno: `px-6 py-5`
 
-### 3.9 CTA Final / Waitlist
+### 3.9 CTA Waitlist
 
-| Antes | Depois |
-|-------|--------|
-| Gradiente simples | Gradiente + formas decorativas (circulos como no hero) |
-| Formulario em card branco | Card branco com shadow mais forte + rounded-2xl |
-| Sem elementos visuais | Adicionar icone/ilustracao acima do titulo |
+**Estado atual**: Gradiente + card branco simples com formulario.
 
-**Detalhes**:
-- Formas decorativas: mesmas do hero (circulos semitransparentes) para coerencia visual
-- Card: `rounded-2xl shadow-2xl p-8 md:p-10`
-- Icone acima do titulo: emoji ou SVG de envelope/foguete em `text-4xl mb-4`
-- Botao submit: `rounded-full` para consistencia com CTA do hero
-- Estado de sucesso: adicionar confetti visual simples (circulos coloridos animados)
+**Upgrade**:
+- **Decoracao**: mesmas formas do hero (circulos `bg-white/5`) para coerencia visual
+- Card: `rounded-2xl shadow-2xl p-8 md:p-10` — mais padding e sombra forte
+- Botoes submit: `rounded-full` (consistencia com CTAs do hero)
+- **Icone de confianca**: pequeno icone de cadeado + texto "Seus dados estao seguros" abaixo do botao de submit
 
 ### 3.10 Footer
 
-| Antes | Depois |
-|-------|--------|
-| 3 colunas simples | 3 colunas + linha de marca forte + links sociais |
-| Texto "Linvo" | Logo real `logo-linvo.png` em branco/invertido |
-| Sem icones sociais | Placeholders para LinkedIn e Instagram (quando disponiveis) |
-| Borda branca fina | Borda com gradiente sutil `border-t border-white/10` |
+**Estado atual**: 3 colunas minimalistas, texto "Linvo", sem icones sociais.
 
-**Detalhes**:
-- Logo: versao branca ou com filtro `brightness(0) invert(1)` sobre logo-linvo.webp
-- Coluna 1: logo + tagline + futuros icones de redes sociais
-- Coluna 2: links de navegacao (Sobre, Contato, Privacidade)
-- Coluna 3: language switcher + "Feito com ❤️ no Brasil"
-- Copyright: `text-xs opacity-40`
+**Upgrade** (inspirado no footer da uCondo):
+- Logo real: `logo-linvo.webp` com filtro `brightness(0) invert(1)` para versao branca
+- Coluna 1: logo + tagline
+- Coluna 2: links (Sobre, Contato, Privacidade)
+- Coluna 3: language switcher
+- Linha inferior: copyright + "Feito no Brasil" (sem emoji, tom profissional)
 
 ### 3.11 Pagina 404
 
-| Antes | Depois |
-|-------|--------|
-| Quadrado azul pulsante | Logo real + ilustracao simples (SVG de mapa/busca) |
-| Sem personalidade | Mensagem com tom amigavel e CTA claro |
+**Estado atual**: Quadrado azul pulsante, texto hardcoded.
+
+**Upgrade**:
+- Logo real centralizado
+- Ilustracao SVG simples (lupa ou mapa)
+- CTA estilizado com `rounded-full`
 
 ---
 
-## 4. Elementos Visuais Globais
+## 4. Componentes Visuais Novos
 
-### 4.1 Formas Decorativas (Background Shapes)
+### 4.1 PhoneMockup
 
-Circulos e formas geometricas sutis usados como decoracao em secoes de destaque:
+Componente que simula uma tela de celular com conteudo representativo do app:
 
+```
+┌──────────────────┐
+│  9:41    Linvo ●●●│  ← Status bar
+├──────────────────┤
+│ ┌──────────────┐ │
+│ │ 📢 Comunicado │ │  ← Card azul claro
+│ │ Reuniao amanha│ │
+│ └──────────────┘ │
+│ ┌──────────────┐ │
+│ │ ✓ Votacao     │ │  ← Card verde claro
+│ │ 23 de 45 votos│ │
+│ └──────────────┘ │
+│ ┌──────────────┐ │
+│ │ 📅 Reserva    │ │  ← Card cinza claro
+│ │ Churrasqueira │ │
+│ └──────────────┘ │
+└──────────────────┘
+```
+
+Visual: fundo branco, bordas arredondadas, sombra forte. Cards internos com cores dos tokens (primary-bg, success-bg, background). Texto representativo (nao lorem ipsum) em portugues/ingles conforme locale.
+
+### 4.2 DecoCircle
+
+Circulos decorativos semitransparentes para hero e CTA:
 ```tsx
-// Componente reutilizavel
-function DecoCircle({ className }: { className: string }) {
-  return <div className={`absolute rounded-full pointer-events-none ${className}`} aria-hidden="true" />;
-}
-
-// Uso no Hero e WaitlistCTA:
-<DecoCircle className="w-96 h-96 bg-white/5 -top-20 -right-20" />
-<DecoCircle className="w-64 h-64 bg-white/3 bottom-10 -left-10" />
+<div className="absolute rounded-full bg-white/5 w-80 h-80 -top-16 -right-16 pointer-events-none" aria-hidden="true" />
 ```
 
-### 4.2 Grid Dots Pattern
-
-SVG pattern sutil para backgrounds de secoes:
+### 4.3 CSS Utilitarios
 
 ```css
-.bg-dots {
-  background-image: radial-gradient(circle, var(--color-border) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-```
-
-### 4.3 Gradiente de Texto
-
-Para titulos de destaque:
-
-```css
+/* Gradiente de texto para titulos de impacto */
 .text-gradient {
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   -webkit-background-clip: text;
@@ -271,119 +232,82 @@ Para titulos de destaque:
 }
 ```
 
-### 4.4 Glow Effect
-
-Para badges e elementos de destaque:
-
-```css
-.glow-accent {
-  box-shadow: 0 0 20px color-mix(in oklab, var(--color-accent) 20%, transparent);
-}
-```
-
 ---
 
-## 5. Imagens e Assets Necessarios
+## 5. Assets Necessarios
 
-### 5.1 Converter PNGs para WebP
-
-| Fonte                            | Destino                         | Uso |
-|----------------------------------|---------------------------------|-----|
-| `assets/brand/logo-linvo.png`    | `public/images/logo-linvo.webp` | Navbar, footer |
-| `assets/brand/logo-icon.png`     | `public/images/logo-icon.webp`  | Redirect page, 404 |
-| `assets/brand/logo-app-icon.png` | `public/images/logo-app-icon.webp` | Secao solucao, hero |
-
-### 5.2 Mockup do App (Ilustrativo)
-
-Para o Hero, criar um componente `PhoneMockup` que simula uma tela de celular com conteudo representativo:
-
-```tsx
-function PhoneMockup() {
-  return (
-    <div className="relative mx-auto w-64 md:w-80">
-      {/* Phone frame */}
-      <div className="rounded-3xl border-4 border-white/20 bg-white/10 p-3 shadow-2xl backdrop-blur-sm">
-        {/* Screen */}
-        <div className="rounded-2xl bg-surface p-4 space-y-3">
-          {/* Status bar */}
-          <div className="flex justify-between text-xs text-text-muted">
-            <span>9:41</span>
-            <span>Linvo</span>
-            <span>●●●</span>
-          </div>
-          {/* Content cards */}
-          <div className="rounded-xl bg-primary-bg p-3">
-            <div className="h-2 w-20 rounded bg-primary/30" />
-            <div className="mt-2 h-2 w-32 rounded bg-primary/20" />
-          </div>
-          <div className="rounded-xl bg-success-bg p-3">
-            <div className="h-2 w-24 rounded bg-success/30" />
-            <div className="mt-2 h-2 w-28 rounded bg-success/20" />
-          </div>
-          <div className="rounded-xl bg-background p-3">
-            <div className="h-2 w-16 rounded bg-text-muted/30" />
-            <div className="mt-2 h-2 w-36 rounded bg-text-muted/20" />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-```
+| Fonte                            | Destino                           | Acao                     |
+|----------------------------------|------------------------------------|--------------------------|
+| `assets/brand/logo-linvo.png`    | `public/images/logo-linvo.webp`   | Converter PNG→WebP       |
+| `assets/brand/logo-icon.png`     | `public/images/logo-icon.webp`    | Converter PNG→WebP       |
+| `assets/brand/logo-app-icon.png` | `public/images/logo-app-icon.webp`| Converter PNG→WebP       |
 
 ---
 
 ## 6. Ordem de Implementacao
 
-### Etapa 1 — Assets e CSS globais
+### Etapa 1 — Fundacao (assets + CSS + componentes base)
 - [ ] Converter logos PNG → WebP e copiar para `public/images/`
-- [ ] Adicionar CSS customizado ao globals.css (`.bg-dots`, `.text-gradient`, `.glow-accent`)
-- [ ] Criar componente `DecoCircle` reutilizavel
-- [ ] Criar componente `PhoneMockup`
+- [ ] Adicionar CSS `.text-gradient` ao globals.css
+- [ ] Criar componente `PhoneMockup` (i18n-aware)
+- [ ] Criar componente `DecoCircle`
 
-### Etapa 2 — Navbar + Footer (marca forte)
-- [ ] Navbar: substituir texto por logo WebP
-- [ ] Navbar: scroll effect refinado (transparente → blur)
-- [ ] Navbar: CTA pill shape
-- [ ] Footer: logo real + layout melhorado + "Feito no Brasil"
+### Etapa 2 — Navbar + Footer (identidade de marca)
+- [ ] Navbar: logo real, scroll effect com blur, CTA pill
+- [ ] Footer: logo real (invertida), layout melhorado, "Feito no Brasil"
 
-### Etapa 3 — Hero (impacto maximo)
-- [ ] Layout split grid com PhoneMockup
-- [ ] Badge "Programa Piloto" acima do headline
-- [ ] Formas decorativas (DecoCircle)
-- [ ] CTAs com icones
-- [ ] Padding aumentado
+### Etapa 3 — Hero (primeira impressao)
+- [ ] Split layout com PhoneMockup
+- [ ] Badge "Programa Piloto Aberto"
+- [ ] DecoCircles decorativos
+- [ ] CTAs pill com seta
+- [ ] Padding generoso
 
 ### Etapa 4 — Secoes de conteudo
 - [ ] Problem: cards individuais com icones em circulo
-- [ ] Solution: split layout com visual
-- [ ] Features: cards elevados com barra accent + icone wrapper
-- [ ] HowItWorks: numeros grandes + linha conectora + nota em card
-- [ ] SocialProof: layout vertical + texto gradiente + card fundador + badge glow
-- [ ] FAQ: cards individuais com bullet decorativo
+- [ ] Solution: split com logo-app-icon + CTA
+- [ ] Features: cards elevados com barra accent + icone wrapper + hover lift
+- [ ] HowItWorks: numeros grandes + nota em card info
+- [ ] SocialProof: layout vertical + texto gradiente + card fundador + badge
+- [ ] FAQ: cards individuais com bullet accent
 
 ### Etapa 5 — CTA Waitlist + 404
-- [ ] WaitlistCTA: formas decorativas + card shadow forte + botoes pill
-- [ ] 404: logo real + mensagem refinada
+- [ ] WaitlistCTA: decoracao + card forte + botoes pill + texto de confianca
+- [ ] 404: logo real + CTA pill
 
-### Etapa 6 — Validacao
-- [ ] Build limpo
-- [ ] Verificar responsividade mobile (320px a 1440px)
-- [ ] Verificar contraste WCAG AA
-- [ ] Verificar performance (imagens WebP, lazy loading)
-- [ ] Push final
+### Etapa 6 — Validacao final
+- [ ] Build limpo sem erros
+- [ ] Responsividade mobile (320px a 1440px)
+- [ ] Contraste WCAG AA
+- [ ] Performance (WebP, lazy loading)
+- [ ] Testar em Chrome, Firefox, Safari
+- [ ] Commit e push
 
 ---
 
 ## 7. Criterios de Aceite
 
-- [ ] Navbar exibe logo real em vez de texto
-- [ ] Hero tem split layout com visual (PhoneMockup) + formas decorativas
-- [ ] Pelo menos 3 secoes tem elementos visuais alem de texto
-- [ ] Cards de Features tem depth (sombra, hover elevation)
-- [ ] CTA buttons sao pill-shaped (rounded-full) consistentemente
-- [ ] Footer tem logo real e presenca de marca
-- [ ] Smooth scroll funciona em todos os anchor links
-- [ ] Mobile responsivo sem overflow horizontal
-- [ ] Build passa sem erros
-- [ ] Contraste WCAG AA mantido
+- [ ] Navbar exibe logo real
+- [ ] Hero tem split layout com PhoneMockup + badge + decoracao
+- [ ] Cards de features tem profundidade (shadow, hover lift, barra accent)
+- [ ] Prova social tem texto gradiente e card do fundador
+- [ ] Botoes CTA sao pill-shaped (rounded-full) consistentemente
+- [ ] Footer tem logo real (invertida) e layout profissional
+- [ ] Espacamento entre secoes e generoso (60-100px)
+- [ ] Mobile funciona sem overflow horizontal
+- [ ] Build compila sem erros
+- [ ] Site transmite confianca e acolhimento — nao parece tech startup fria
+
+---
+
+## 8. O que NAO fazer (aprendizado dos concorrentes)
+
+| Evitar                                | Por que                                              |
+|---------------------------------------|------------------------------------------------------|
+| Headlines em uppercase agressivo      | TownSq usa, mas intimida sindicos mais tradicionais  |
+| Verde neon ou amarelo forte           | Superlogica usa amarelo, TownSq usa verde neon — cansa |
+| Ausencia de visual do produto         | uCondo nao mostra screenshots — perde oportunidade   |
+| Formulario de contato no footer       | uCondo faz — polui o footer, melhor ter pagina dedicada |
+| Carousel de logos sem ter logos        | Ter secao vazia e pior que nao ter                   |
+| Efeitos de animacao pesados           | Superlogica tem ripple effects — bonito mas pesado para GitHub Pages estatico |
+| Multiplos tons de CTA                 | Superlogica tem 3 cores de botao — confuso. Linvo: accent-dark (primario) + outline (secundario) |
