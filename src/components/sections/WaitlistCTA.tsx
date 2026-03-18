@@ -183,7 +183,7 @@ export function WaitlistCTA() {
               </div>
 
               <Button type="submit" loading={loading} className="mt-6 w-full">
-                {t('step2.submit')}
+                {loading ? t('step1.submitting') : t('step2.submit')}
               </Button>
               <button
                 type="button"
