@@ -43,8 +43,16 @@ export function Footer({ locale }: { locale: string }) {
           <div className="flex flex-col gap-4 md:items-end">
             <LanguageSwitcher />
             <p className="text-sm text-white/40">
-              {locale === 'pt' ? 'Feito no Brasil' : 'Made in Brazil'}
+              Miami, FL — USA
             </p>
+            <a
+              href="https://azebratech.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-white/30 hover:text-white/50 transition-colors"
+            >
+              {locale === 'pt' ? 'Desenvolvido por AzebraTech' : 'Built by AzebraTech'}
+            </a>
           </div>
         </div>
 
