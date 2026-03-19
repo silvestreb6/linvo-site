@@ -34,7 +34,13 @@ export default function RootRedirect() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-background">
-      <div className="w-16 h-16 animate-pulse rounded-xl bg-primary" aria-hidden="true" />
+      <img
+        src="/images/logo-icon.png"
+        alt="Linvo"
+        className="w-16 h-16 animate-pulse"
+        width="64"
+        height="64"
+      />
     </div>
   );
 }

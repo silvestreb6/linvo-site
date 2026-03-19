@@ -11,11 +11,13 @@ export function FAQ() {
 
   return (
     <Section id="faq" bg="surface">
-      <h2 className="text-center text-3xl font-heading font-bold text-text-primary md:text-4xl">
-        {t('title')}
-      </h2>
-      <div className="mx-auto mt-12 max-w-3xl">
-        <Accordion items={items} />
+      <div className="mx-auto max-w-3xl">
+        <h2 className="text-center text-3xl font-heading font-bold text-text-primary md:text-4xl">
+          {t('title')}
+        </h2>
+        <div className="mt-12">
+          <Accordion items={items} />
+        </div>
       </div>
     </Section>
   );

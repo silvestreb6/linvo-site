@@ -9,31 +9,45 @@ export function Footer({ locale }: { locale: string }) {
 
   return (
     <footer className="bg-primary-dark text-text-on-primary">
-      <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="grid gap-8 md:grid-cols-3">
+      <div className="mx-auto max-w-6xl px-6 py-16">
+        <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <span className="text-xl font-heading font-bold">Linvo</span>
-            <p className="mt-2 text-sm opacity-70">{t('tagline')}</p>
+            <img
+              src="/images/logo-linvo.png"
+              alt="Linvo"
+              className="h-8 brightness-0 invert"
+              width="120"
+              height="32"
+            />
+            <p className="mt-3 text-sm text-white/60 max-w-xs">
+              {t('tagline')}
+            </p>
           </div>
 
-          <div className="flex flex-col gap-2 text-sm">
-            <a href={aboutHref} className="opacity-70 hover:opacity-100 transition-opacity">
+          <div className="flex flex-col gap-3 text-sm">
+            <span className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-1">
+              {locale === 'pt' ? 'Links' : 'Links'}
+            </span>
+            <a href={aboutHref} className="text-white/70 hover:text-white transition-colors w-fit">
               {locale === 'pt' ? 'Sobre' : 'About'}
             </a>
-            <a href={contactHref} className="opacity-70 hover:opacity-100 transition-opacity">
+            <a href={contactHref} className="text-white/70 hover:text-white transition-colors w-fit">
               {locale === 'pt' ? 'Contato' : 'Contact'}
             </a>
-            <a href={privacyHref} className="opacity-70 hover:opacity-100 transition-opacity">
+            <a href={privacyHref} className="text-white/70 hover:text-white transition-colors w-fit">
               {locale === 'pt' ? 'Privacidade & Termos' : 'Privacy & Terms'}
             </a>
           </div>
 
           <div className="flex flex-col gap-4 md:items-end">
             <LanguageSwitcher />
+            <p className="text-sm text-white/40">
+              {locale === 'pt' ? 'Feito no Brasil' : 'Made in Brazil'}
+            </p>
           </div>
         </div>
 
-        <div className="mt-8 border-t border-white/20 pt-6 text-center text-sm opacity-60">
+        <div className="mt-12 border-t border-white/10 pt-6 text-center text-xs text-white/30">
           {t('copyright')}
         </div>
       </div>

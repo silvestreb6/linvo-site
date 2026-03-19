@@ -81,15 +81,19 @@ export function WaitlistCTA() {
   return (
     <section
       id="waitlist"
-      className="bg-gradient-to-br from-primary to-primary-light py-16 md:py-24"
+      className="relative overflow-hidden bg-gradient-to-br from-primary to-primary-light py-20 md:py-28"
     >
-      <div className="mx-auto max-w-xl px-6 text-center">
+      {/* Decorative shapes */}
+      <div className="absolute w-72 h-72 rounded-full bg-white/5 -top-16 -right-16 pointer-events-none" aria-hidden="true" />
+      <div className="absolute w-52 h-52 rounded-full bg-white/[0.03] bottom-8 -left-12 pointer-events-none" aria-hidden="true" />
+
+      <div className="relative mx-auto max-w-xl px-6 text-center">
         <h2 className="text-3xl font-heading font-bold text-text-on-primary md:text-4xl">
           {t('title')}
         </h2>
-        <p className="mt-4 text-text-on-primary/80">{t('subtitle')}</p>
+        <p className="mt-4 text-white/75 text-lg">{t('subtitle')}</p>
 
-        <div className="mt-8 rounded-xl bg-surface p-6 md:p-8 text-left shadow-lg">
+        <div className="mt-8 rounded-2xl bg-surface p-7 md:p-10 text-left shadow-2xl">
           {step === 'form' && (
             <form onSubmit={handleStep1} noValidate>
               {error && (
@@ -145,9 +149,13 @@ export function WaitlistCTA() {
                 </div>
               </div>
 
-              <Button type="submit" loading={loading} className="mt-6 w-full">
+              <Button type="submit" loading={loading} className="mt-6 w-full rounded-full">
                 {loading ? t('step1.submitting') : t('step1.submit')}
               </Button>
+              <p className="mt-3 text-center text-xs text-text-muted flex items-center justify-center gap-1">
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0110 0v4" /></svg>
+                {locale === 'pt' ? 'Seus dados estão seguros' : 'Your data is secure'}
+              </p>
             </form>
           )}
 

@@ -37,11 +37,21 @@ export function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-shadow ${scrolled ? 'shadow-sm bg-surface/95 backdrop-blur-sm' : 'bg-surface'}`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled
+            ? 'bg-surface/95 backdrop-blur-md shadow-sm border-b border-border/30'
+            : 'bg-surface'
+        }`}
       >
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
           <a href={`/${locale}/`} className="flex items-center gap-2">
-            <span className="text-xl font-heading font-bold text-primary">Linvo</span>
+            <img
+              src="/images/logo-linvo.png"
+              alt="Linvo"
+              className="h-8"
+              width="120"
+              height="32"
+            />
           </a>
 
           <div className="hidden items-center gap-6 md:flex">
@@ -70,7 +80,7 @@ export function Navbar() {
             {isLanding && (
               <a
                 href="#waitlist"
-                className="rounded-lg bg-accent-dark px-4 py-2 text-sm font-semibold text-text-on-accent hover:opacity-90 transition-opacity"
+                className="rounded-full bg-accent-dark px-5 py-2 text-sm font-semibold text-text-on-accent shadow-sm hover:opacity-90 transition-opacity"
               >
                 {t('waitlist_cta')}
               </a>
@@ -99,8 +109,7 @@ export function Navbar() {
         isLanding={isLanding}
       />
 
-      {/* Spacer for fixed navbar */}
-      <div className="h-16" />
+      <div className="h-14" />
     </>
   );
 }
