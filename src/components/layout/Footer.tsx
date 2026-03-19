@@ -42,9 +42,7 @@ export function Footer({ locale }: { locale: string }) {
 
           <div className="flex flex-col gap-4 md:items-end">
             <LanguageSwitcher />
-            <p className="text-sm text-white/40">
-              Miami, FL — USA
-            </p>
+            <p className="text-sm text-white/40">USA</p>
             <a
               href="https://azebratech.com"
               target="_blank"
