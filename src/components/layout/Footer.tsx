@@ -13,9 +13,10 @@ export function Footer({ locale }: { locale: string }) {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <img
-              src="/images/logo-linvo.png"
+              src="/images/logo-linvo-horizontal.png"
               alt="Linvo"
-              className="h-8 brightness-0 invert"
+              className="h-8"
+              style={{ filter: 'brightness(0) invert(1)' }}
               width="120"
               height="32"
             />

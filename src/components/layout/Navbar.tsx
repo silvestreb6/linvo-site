@@ -46,7 +46,7 @@ export function Navbar() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
           <a href={`/${locale}/`} className="flex items-center gap-2">
             <img
-              src="/images/logo-linvo.png"
+              src="/images/logo-linvo-horizontal.png"
               alt="Linvo"
               className="h-8"
               width="120"
